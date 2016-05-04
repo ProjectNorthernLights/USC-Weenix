@@ -1,0 +1,697 @@
+/usr/bin/qemu-system-i386
+[32;40mKernel binary:
+[0m[32;40m  text: 0xc0000000-0xc003f000
+[0m[32;40m  data: 0xc003f000-0xc003f874
+[0m[32;40m  bss:  0xc003f874-0xc004a000
+[0m[31;40mPhysical Memory Map:
+[0m[31;40m    0x00000000-0x0009f400: Usable
+[0m[31;40m    0x0009f400-0x000a0000: Reserved
+[0m[31;40m    0x000f0000-0x00100000: Reserved
+[0m[31;40m    0x00100000-0x01ffd000: Usable
+[0m[31;40mHighest usable physical memory: 0x01ffd000
+[0m[31;40mAvailable memory: 0x01efd000
+[0m[31;40mPage System adding range: 0xc0056400 to 0xc1efd000
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 0
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "slab_allocators" (0xc00498c4)
+[0m[31;40m  Object Size:   32
+[0m[31;40m  Order:         0
+[0m[31;40m  Slab Capacity: 102
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1efa000 (1) into 0xc1efa000 and 0xc1efb000
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 1 pages (addr 0xc1efb000)
+[0m[31;40mmm/slab.c:253 _slab_allocator_grow(): Growing cache "slab_allocators" (0xc00498c4), new slab 0xc1efbff0 (1 pages)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb000 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 1
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 0
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-64" (0xc1efb004)
+[0m[31;40m  Object Size:   72
+[0m[31;40m  Order:         0
+[0m[31;40m  Slab Capacity: 51
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb028 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 2
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 48
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 4, waste 0
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-128" (0xc1efb02c)
+[0m[31;40m  Object Size:   136
+[0m[31;40m  Order:         4
+[0m[31;40m  Slab Capacity: 455
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb050 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 3
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 0
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-256" (0xc1efb054)
+[0m[31;40m  Object Size:   264
+[0m[31;40m  Order:         0
+[0m[31;40m  Slab Capacity: 15
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb078 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 4
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 384
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 1, waste 256
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 2, waste 0
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-512" (0xc1efb07c)
+[0m[31;40m  Object Size:   520
+[0m[31;40m  Order:         2
+[0m[31;40m  Slab Capacity: 31
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb0a0 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 5
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 960
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 1, waste 896
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 2, waste 768
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 3, waste 512
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 4, waste 0
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-1024" (0xc1efb0a4)
+[0m[31;40m  Object Size:   1032
+[0m[31;40m  Order:         4
+[0m[31;40m  Slab Capacity: 63
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb0c8 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 6
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 2016
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 1, waste 1984
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 2, waste 1920
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 3, waste 1792
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 4, waste 1536
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-2048" (0xc1efb0cc)
+[0m[31;40m  Object Size:   2056
+[0m[31;40m  Order:         4
+[0m[31;40m  Slab Capacity: 31
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb0f0 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 7
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 1, waste 4064
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 2, waste 4032
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 3, waste 3968
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 4, waste 3840
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-4096" (0xc1efb0f4)
+[0m[31;40m  Object Size:   4104
+[0m[31;40m  Order:         4
+[0m[31;40m  Slab Capacity: 15
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb118 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 8
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 2, waste 8160
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 3, waste 8128
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 4, waste 8064
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-8192" (0xc1efb11c)
+[0m[31;40m  Object Size:   8200
+[0m[31;40m  Order:         4
+[0m[31;40m  Slab Capacity: 7
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb140 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 9
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 3, waste 16352
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 4, waste 16320
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-16384" (0xc1efb144)
+[0m[31;40m  Object Size:   16392
+[0m[31;40m  Order:         4
+[0m[31;40m  Slab Capacity: 3
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb168 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 10
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 4, waste 32736
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-32768" (0xc1efb16c)
+[0m[31;40m  Object Size:   32776
+[0m[31;40m  Order:         4
+[0m[31;40m  Slab Capacity: 1
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb190 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 11
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 5, waste 65504
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-65536" (0xc1efb194)
+[0m[31;40m  Object Size:   65544
+[0m[31;40m  Order:         5
+[0m[31;40m  Slab Capacity: 1
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb1b8 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 12
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 6, waste 131040
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-131072" (0xc1efb1bc)
+[0m[31;40m  Object Size:   131080
+[0m[31;40m  Order:         6
+[0m[31;40m  Slab Capacity: 1
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb1e0 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 13
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 7, waste 262112
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "size-262144" (0xc1efb1e4)
+[0m[31;40m  Object Size:   262152
+[0m[31;40m  Order:         7
+[0m[31;40m  Slab Capacity: 1
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb208 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 14
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 48
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 1, waste 40
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 2, waste 24
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 4, waste 0
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "pframe" (0xc1efb20c)
+[0m[31;40m  Object Size:   64
+[0m[31;40m  Order:         4
+[0m[31;40m  Slab Capacity: 910
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 1 pages (addr 0xc1efa000)
+[0m[31;40mmm/slab.c:253 _slab_allocator_grow(): Growing cache "size-64" (0xc1efb004), new slab 0xc1efaff0 (1 pages)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa000 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 1
+[0m[32;40m--- ACPI INIT ---
+[0m[32;40mrsdp addr:  000fdab0
+[0m[32;40mrsdt addr:  c1efa008
+[0m[32;40mrev:        0
+[0m[32;40moem:        BOCHS 6
+[0m[32;40ments:	[0m[37;40mmm/page.c:174 __page_split(): split 0xc1ed6000 (5) into 0xc1ed6000 and 0xc1ee6000
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 16 pages (addr 0xc1ee6000)
+[0m[31;40mmm/slab.c:253 _slab_allocator_grow(): Growing cache "size-128" (0xc1efb02c), new slab 0xc1ef5ff0 (16 pages)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee6000 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 1
+[0m[32;40mFACP [0m[37;40mmm/page.c:174 __page_split(): split 0xc1ef6000 (2) into 0xc1ef6000 and 0xc1ef8000
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1ef8000 (1) into 0xc1ef8000 and 0xc1ef9000
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 1 pages (addr 0xc1ef9000)
+[0m[31;40mmm/slab.c:253 _slab_allocator_grow(): Growing cache "size-256" (0xc1efb054), new slab 0xc1ef9ff0 (1 pages)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ef9000 from "size-256" (0xc1efb054), slab 0xc1efb054, inuse 1
+[0m[32;40mSSDT [0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee6090 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 2
+[0m[32;40mAPIC [0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa050 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 2
+[0m[32;40mHPET [0m[32;40m
+[0m[32;40m--- APIC INIT ---
+[0m[32;40mlocal apic paddr:     0xfee00000
+[0m[32;40mPC-AT compatible:    1
+[0m[32;40mLAPIC:
+[0m[32;40m   id:         0x00
+[0m[32;40m   processor:  0x000
+[0m[32;40m   enabled:    1
+[0m[32;40mIOAPIC:
+[0m[32;40m   id:         0x01
+[0m[32;40m   base paddr:  0xfec00000
+[0m[32;40m   inti addr:   0x00000000
+[0m[32;40mUnknown APIC type:  0x2
+[0m[32;40mUnknown APIC type:  0x2
+[0m[32;40mUnknown APIC type:  0x2
+[0m[32;40mUnknown APIC type:  0x2
+[0m[32;40mUnknown APIC type:  0x2
+[0m[32;40mLocal APIC 0x00 Configuration:
+[0m[32;40m    APIC Version:         0x11
+[0m[32;40m    Spurious Vector:      0x000001ff
+[0m[32;40mIO APIC 0x00 Configuration:
+[0m[32;40m    APIC Version:         0x11
+[0m[32;40m    Maximum Redirection:  0x17
+[0m[32;40mmain/apic.c:263 apic_setspur(): mapping spurious interrupts to %hu
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb230 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 15
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 20
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 1, waste 0
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "vmmap" (0xc1efb234)
+[0m[31;40m  Object Size:   20
+[0m[31;40m  Order:         1
+[0m[31;40m  Slab Capacity: 292
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb258 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 16
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 0
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "vmarea" (0xc1efb25c)
+[0m[31;40m  Object Size:   52
+[0m[31;40m  Order:         0
+[0m[31;40m  Slab Capacity: 68
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb280 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 17
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 240
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 1, waste 16
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "proc" (0xc1efb284)
+[0m[31;40m  Object Size:   472
+[0m[31;40m  Order:         1
+[0m[31;40m  Slab Capacity: 17
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb2a8 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 18
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 48
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 1, waste 28
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 4, waste 0
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "kthread" (0xc1efb2ac)
+[0m[31;40m  Object Size:   76
+[0m[31;40m  Order:         4
+[0m[31;40m  Slab Capacity: 780
+[0m[32;40mmain/apic.c:256 apic_setredir(): redirecting irq 1 to interrupt %hu
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa0a0 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 3
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa0f0 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 4
+[0m[1;35;40mdrivers/tty/n_tty.c:190 n_tty_attach(): Attaching n_tty line discipline to tty 0
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ef9110 from "size-256" (0xc1efb054), slab 0xc1efb054, inuse 2
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa140 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 5
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa190 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 6
+[0m[1;35;40mdrivers/tty/n_tty.c:190 n_tty_attach(): Attaching n_tty line discipline to tty 1
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ef9220 from "size-256" (0xc1efb054), slab 0xc1efb054, inuse 3
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa1e0 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 7
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa230 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 8
+[0m[1;35;40mdrivers/tty/n_tty.c:190 n_tty_attach(): Attaching n_tty line discipline to tty 2
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ef9330 from "size-256" (0xc1efb054), slab 0xc1efb054, inuse 4
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa280 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 9
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa2d0 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 10
+[0m[32;40mmain/apic.c:256 apic_setredir(): redirecting irq 14 to interrupt %hu
+[0m[32;40mmain/apic.c:256 apic_setredir(): redirecting irq 15 to interrupt %hu
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee6120 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 3
+[0m[33;40mdrivers/disk/ata.c:311 ata_init(): Initialized ATA device 0, channel PRIMARY, drive MASTER, size 8192
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 1 pages (addr 0xc1ef8000)
+[0mENTERING CONTEXT ACTIVE
+[33;40mdrivers/disk/ata.c:330 ata_intr_wrapper(): ATA interrupt
+[0m[33;40mdrivers/disk/ata.c:595 ata_intr(): Received interrupt w/ intr number 208, error code 0, for channel 0, drive 0
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 2 pages (addr 0xc1ef6000)
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1ed6000 (4) into 0xc1ed6000 and 0xc1ede000
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1ede000 (3) into 0xc1ede000 and 0xc1ee2000
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1ee2000 (2) into 0xc1ee2000 and 0xc1ee4000
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 2 pages (addr 0xc1ee4000)
+[0m[31;40mmm/slab.c:253 _slab_allocator_grow(): Growing cache "proc" (0xc1efb284), new slab 0xc1ee5fe0 (2 pages)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee4000 from "proc" (0xc1efb284), slab 0xc1efb284, inuse 1
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1e56000 (7) into 0xc1e56000 and 0xc1e96000
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1e96000 (6) into 0xc1e96000 and 0xc1eb6000
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1eb6000 (5) into 0xc1eb6000 and 0xc1ec6000
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 16 pages (addr 0xc1ec6000)
+[0m[31;40mmm/slab.c:253 _slab_allocator_grow(): Growing cache "kthread" (0xc1efb2ac), new slab 0xc1ed5ff0 (16 pages)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ec6000 from "kthread" (0xc1efb2ac), slab 0xc1efb2ac, inuse 1
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 16 pages (addr 0xc1eb6000)
+[0mENTERING CONTEXT ACTIVE
+[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee41e0 from "proc" (0xc1efb284), slab 0xc1efb284, inuse 2
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ec6054 from "kthread" (0xc1efb2ac), slab 0xc1efb2ac, inuse 2
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1e96000 (5) into 0xc1e96000 and 0xc1ea6000
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 16 pages (addr 0xc1ea6000)
+[0m[36;40mutil/init.c:73 init_call_all(): ENTERED INIT_CALL_ALL
+[0m[36;40mutil/init.c:79 init_call_all(): ENTERING WHILE LOOP NOW
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa320 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 11
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa370 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 12
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa3c0 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 13
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa410 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 14
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa460 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 15
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa4b0 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 16
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa500 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 17
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa550 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 18
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa5a0 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 19
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa5f0 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 20
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa640 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 21
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa690 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 22
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa6e0 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 23
+[0m[36;40mutil/init.c:107 init_call_all(): EXITED WHILE LOOP
+[0m[0mutil/init.c:112 init_call_all(): Initialization functions and dependencies:
+[0m[0msched_init (0xc000c892): [0m[0m
+[0m[0mfile_init (0xc000e2bf): [0m[0m
+[0m[0mvfs_init (0xc000f59b): [0m[0mvnode_init [0m[0mfile_init [0m[0m
+[0m[0mvnode_init (0xc00110c3): [0m[0m
+[0m[0mbinfmt_init (0xc001355b): [0m[0m
+[0m[0melf32_init (0xc0015935): [0m[0mbinfmt_init [0m[0m
+[0m[0msyscall_init (0xc0015c79): [0m[0m
+[0m[0mkshell_init (0xc001869c): [0m[0m
+[0m[0mpageoutd_init (0xc002cd8e): [0m[0msched_init [0m[0m
+[0m[36;40mutil/init.c:122 init_call_all(): EXITING LIST 1
+[0m[36;40mutil/init.c:127 init_call_all(): ITERATION[0m[0mutil/init.c:63 _init_call(): Calling sched_init (0xc000c892)
+[0m[36;40mutil/init.c:127 init_call_all(): ITERATION[0m[0mutil/init.c:63 _init_call(): Calling file_init (0xc000e2bf)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb2d0 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 19
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 16
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "file" (0xc1efb2d4)
+[0m[31;40m  Object Size:   24
+[0m[31;40m  Order:         0
+[0m[31;40m  Slab Capacity: 127
+[0m[36;40mutil/init.c:127 init_call_all(): ITERATION[0m[0mutil/init.c:51 _init_call(): 'vfs_init' depends on 'vnode_init': [0m[0mcalling
+[0m[0mutil/init.c:63 _init_call(): Calling vnode_init (0xc00110c3)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efb2f8 from "slab_allocators" (0xc00498c4), slab 0xc00498c4, inuse 20
+[0m[31;40mmm/slab.c:139 _calc_slab_size(): calc_slab_size: minorder 0, waste 112
+[0m[31;40mmm/slab.c:150 _calc_slab_size(): calc_slab_size: replacing with order 2, waste 0
+[0m[31;40mmm/slab.c:182 _allocator_init(): Initialized new slab allocator:
+[0m[31;40m  Name:          "vnode" (0xc1efb2fc)
+[0m[31;40m  Object Size:   116
+[0m[31;40m  Order:         2
+[0m[31;40m  Slab Capacity: 132
+[0m[0mutil/init.c:51 _init_call(): 'vfs_init' depends on 'file_init': [0m[0malready called
+[0m[0mutil/init.c:63 _init_call(): Calling vfs_init (0xc000f59b)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee61b0 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 4
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 4 pages (addr 0xc1ede000)
+[0m[31;40mmm/slab.c:253 _slab_allocator_grow(): Growing cache "size-512" (0xc1efb07c), new slab 0xc1ee1ff0 (4 pages)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ede000 from "size-512" (0xc1efb07c), slab 0xc1efb07c, inuse 1
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa730 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 24
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1ee2000 (1) into 0xc1ee2000 and 0xc1ee3000
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 1 pages (addr 0xc1ee3000)
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1ed6000 (3) into 0xc1ed6000 and 0xc1eda000
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 4 pages (addr 0xc1eda000)
+[0m[31;40mmm/slab.c:253 _slab_allocator_grow(): Growing cache "vnode" (0xc1efb2fc), new slab 0xc1eddff0 (4 pages)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1eda000 from "vnode" (0xc1efb2fc), slab 0xc1efb2fc, inuse 1
+[0m[36;40mutil/init.c:127 init_call_all(): ITERATION[0m[0mutil/init.c:63 _init_call(): Calling binfmt_init (0xc001355b)
+[0m[36;40mutil/init.c:127 init_call_all(): ITERATION[0m[0mutil/init.c:51 _init_call(): 'elf32_init' depends on 'binfmt_init': [0m[0malready called
+[0m[0mutil/init.c:63 _init_call(): Calling elf32_init (0xc0015935)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa780 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 25
+[0m[1;31;40mapi/binfmt.c:36 binfmt_add(): Registering binary loader ELF32
+[0m[36;40mutil/init.c:127 init_call_all(): ITERATION[0m[0mutil/init.c:63 _init_call(): Calling syscall_init (0xc0015c79)
+[0m[36;40mutil/init.c:127 init_call_all(): ITERATION[0m[0mutil/init.c:63 _init_call(): Calling kshell_init (0xc001869c)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee6240 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 5
+[0m[31;40mtest/kshell/kshell.c:64 kshell_add_command(): Added help command
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee62d0 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 6
+[0m[31;40mtest/kshell/kshell.c:64 kshell_add_command(): Added echo command
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee6360 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 7
+[0m[31;40mtest/kshell/kshell.c:64 kshell_add_command(): Added cat command
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee63f0 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 8
+[0m[31;40mtest/kshell/kshell.c:64 kshell_add_command(): Added ls command
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee6480 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 9
+[0m[31;40mtest/kshell/kshell.c:64 kshell_add_command(): Added cd command
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee6510 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 10
+[0m[31;40mtest/kshell/kshell.c:64 kshell_add_command(): Added rm command
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee65a0 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 11
+[0m[31;40mtest/kshell/kshell.c:64 kshell_add_command(): Added link command
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee6630 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 12
+[0m[31;40mtest/kshell/kshell.c:64 kshell_add_command(): Added rmdir command
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee66c0 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 13
+[0m[31;40mtest/kshell/kshell.c:64 kshell_add_command(): Added mkdir command
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee6750 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 14
+[0m[31;40mtest/kshell/kshell.c:64 kshell_add_command(): Added stat command
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee67e0 from "size-128" (0xc1efb02c), slab 0xc1efb02c, inuse 15
+[0m[31;40mtest/kshell/kshell.c:64 kshell_add_command(): Added exit command
+[0m[36;40mutil/init.c:127 init_call_all(): ITERATION[0m[0mutil/init.c:51 _init_call(): 'pageoutd_init' depends on 'sched_init': [0m[0malready called
+[0m[0mutil/init.c:63 _init_call(): Calling pageoutd_init (0xc002cd8e)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee43c0 from "proc" (0xc1efb284), slab 0xc1efb284, inuse 3
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ec60a8 from "kthread" (0xc1efb2ac), slab 0xc1efb2ac, inuse 3
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 16 pages (addr 0xc1e96000)
+[0m[36;40mproc/sched.c:310 sched_make_runnable(): ADDING PROCESS: pageoutd, ON RUN_QUEUE
+[0m[36;40mutil/init.c:132 init_call_all(): EXITING LIST 2
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa320 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 24
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa370 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 23
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa410 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 22
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa460 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 21
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa3c0 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 20
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa4b0 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 19
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa500 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 18
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa5a0 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 17
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa550 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 16
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa5f0 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 15
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa640 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 14
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa6e0 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 13
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1efa690 from "size-64" (0xc1efb004), slab 0xc1efaff0, inuse 12
+[0m[36;40mutil/init.c:142 init_call_all(): EXITING INIT_CALL_ALL
+[0m[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda004, 0xc1ee61b8 ino 0 up to 2, nrespages=0
+[0mENTERING MKDIR()
+pathname : /dev
+f_path : /dev
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda004, 0xc1ee61b8 ino 0 up to 3, nrespages=0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda004, 0xc1ee61b8 ino 0, down to 2, nrespages = 0
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa690 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 13
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 1 pages (addr 0xc1ee2000)
+[0mIteration! Current vnode no.: 0
+[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1eda07c from "vnode" (0xc1efb2fc), slab 0xc1efb2fc, inuse 2
+[0mMKDIR() RETVAL: 0
+INSIDE DO_MKNOD()
+pathname : /dev/null
+f_path : /dev/null
+Iteration! Current vnode no.: 1
+Hit!! vnode no.: 1
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda080, 0xc1ee61b8 ino 1 up to 2, nrespages=0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda080, 0xc1ee61b8 ino 1, down to 1, nrespages = 0
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa6e0 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 14
+[0mIteration! Current vnode no.: 1
+Iteration! Current vnode no.: 0
+[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1eda0f8 from "vnode" (0xc1efb2fc), slab 0xc1efb2fc, inuse 3
+[0mMK_NOD() RETVAL : 0
+/dev/null CREATED
+INSIDE DO_MKNOD()
+pathname : /dev/zero
+f_path : /dev/zero
+Iteration! Current vnode no.: 2
+Iteration! Current vnode no.: 1
+Hit!! vnode no.: 1
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda080, 0xc1ee61b8 ino 1 up to 2, nrespages=0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda080, 0xc1ee61b8 ino 1, down to 1, nrespages = 0
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa640 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 15
+[0mIteration! Current vnode no.: 2
+Iteration! Current vnode no.: 1
+Iteration! Current vnode no.: 0
+[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1eda174 from "vnode" (0xc1efb2fc), slab 0xc1efb2fc, inuse 4
+[0mMK_NOD() RETVAL : 0
+/dev/zero CREATED
+INSIDE DO_MKNOD()
+pathname : /dev/tty0
+f_path : /dev/tty0
+Iteration! Current vnode no.: 3
+Iteration! Current vnode no.: 2
+Iteration! Current vnode no.: 1
+Hit!! vnode no.: 1
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda080, 0xc1ee61b8 ino 1 up to 2, nrespages=0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda080, 0xc1ee61b8 ino 1, down to 1, nrespages = 0
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa5f0 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 16
+[0mIteration! Current vnode no.: 3
+Iteration! Current vnode no.: 2
+Iteration! Current vnode no.: 1
+Iteration! Current vnode no.: 0
+[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1eda1f0 from "vnode" (0xc1efb2fc), slab 0xc1efb2fc, inuse 5
+[0mMK_NOD() RETVAL : 0
+/dev/tty0 CREATED
+[36;40mproc/sched.c:310 sched_make_runnable(): ADDING PROCESS: INIT, ON RUN_QUEUE
+[0m[36;40mproc/sched.c:247 sched_switch(): PROCESS FORMERLY EXECUTING: IDLE
+[0m[36;40mproc/sched.c:276 sched_switch(): PROCESS CURRENTLY EXECUTING: pageoutd
+[0m[1;35;40mmm/pframe.c:688 pageoutd_run(): PAGEOUT DEMAON: Falling asleep
+[0m[1;35;40mmm/pframe.c:692 pageoutd_run(): PAGEOUT DEMAON: nfreepages_target=|3922| nfreepages_min=|0| page_free_count=|7748|
+[0m[36;40mproc/sched.c:247 sched_switch(): PROCESS FORMERLY EXECUTING: pageoutd
+[0m[36;40mproc/sched.c:276 sched_switch(): PROCESS CURRENTLY EXECUTING: INIT
+[0m[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda004, 0xc1ee61b8 ino 0 up to 3, nrespages=0
+[0mSTARTED RUNNING INIT PROCESS
+[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ee45a0 from "proc" (0xc1efb284), slab 0xc1efb284, inuse 4
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ec60fc from "kthread" (0xc1efb2ac), slab 0xc1efb2ac, inuse 4
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1e56000 (6) into 0xc1e56000 and 0xc1e76000
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1e76000 (5) into 0xc1e76000 and 0xc1e86000
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 16 pages (addr 0xc1e86000)
+[0m[36;40mproc/sched.c:310 sched_make_runnable(): ADDING PROCESS: TESTER, ON RUN_QUEUE
+[0m[36;40mproc/sched.c:247 sched_switch(): PROCESS FORMERLY EXECUTING: INIT
+[0m[36;40mproc/sched.c:276 sched_switch(): PROCESS CURRENTLY EXECUTING: TESTER
+[0mENTERING MKDIR()
+pathname : vfstest-505826665
+f_path : /vfstest-505826665
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda004, 0xc1ee61b8 ino 0 up to 4, nrespages=0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda004, 0xc1ee61b8 ino 0, down to 3, nrespages = 0
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa550 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 17
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1ed6000 (2) into 0xc1ed6000 and 0xc1ed8000
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1ed8000 (1) into 0xc1ed8000 and 0xc1ed9000
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 1 pages (addr 0xc1ed9000)
+[0mIteration! Current vnode no.: 4
+Iteration! Current vnode no.: 3
+Iteration! Current vnode no.: 2
+Iteration! Current vnode no.: 1
+Iteration! Current vnode no.: 0
+[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1eda26c from "vnode" (0xc1efb2fc), slab 0xc1efb2fc, inuse 6
+[0mMKDIR() RETVAL: 0
+[31;40mtest/vfstest/vfstest.c:175 vfstest_start(): Created test root directory: ./vfstest-505826665
+[0mENTERING CHDIR()
+pathname : vfstest-505826665
+f_path : /vfstest-505826665
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda004, 0xc1ee61b8 ino 0 up to 4, nrespages=0
+[0mIteration! Current vnode no.: 5
+Hit!! vnode no.: 5
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda270, 0xc1ee61b8 ino 5 up to 2, nrespages=0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda004, 0xc1ee61b8 ino 0, down to 3, nrespages = 0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda004, 0xc1ee61b8 ino 0, down to 2, nrespages = 0
+[0mEXITING CHDIR
+ENTERING MKDIR()
+pathname : fd
+f_path : /fd
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda270, 0xc1ee61b8 ino 5 up to 3, nrespages=0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda270, 0xc1ee61b8 ino 5, down to 2, nrespages = 0
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa5a0 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 18
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 1 pages (addr 0xc1ed8000)
+[0mIteration! Current vnode no.: 5
+Iteration! Current vnode no.: 4
+Iteration! Current vnode no.: 3
+Iteration! Current vnode no.: 2
+Iteration! Current vnode no.: 1
+Iteration! Current vnode no.: 0
+[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1eda2e8 from "vnode" (0xc1efb2fc), slab 0xc1efb2fc, inuse 7
+[0mMKDIR() RETVAL: 0
+ENTERING CHDIR()
+pathname : fd
+f_path : /fd
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda270, 0xc1ee61b8 ino 5 up to 3, nrespages=0
+[0mIteration! Current vnode no.: 6
+Hit!! vnode no.: 6
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda2ec, 0xc1ee61b8 ino 6 up to 2, nrespages=0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda270, 0xc1ee61b8 ino 5, down to 2, nrespages = 0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda270, 0xc1ee61b8 ino 5, down to 1, nrespages = 0
+[0mEXITING CHDIR
+ENTERING READ()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(422): (errno = 0, -1 == (ksys_read(20, buf, 5))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING READ()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(423): (errno = 0, -1 == (ksys_read(9999, buf, 5))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING READ()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(424): (errno = 0, -1 == (ksys_read(-1, buf, 5))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING WRITE()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(426): (errno = 0, -1 == (ksys_write(20, buf, 5))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING WRITE()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(427): (errno = 0, -1 == (ksys_write(9999, buf, 5))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING WRITE()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(428): (errno = 0, -1 == (ksys_write(-1, buf, 5))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING CLOSE()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(430): (errno = 0, -1 == (ksys_close(20))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING CLOSE()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(431): (errno = 0, -1 == (ksys_close(9999))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING CLOSE()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(432): (errno = 0, -1 == (ksys_close(-1))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING LSEEK()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(434): (errno = 0, -1 == (ksys_lseek(20, 0, 0))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING LSEEK()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(435): (errno = 0, -1 == (ksys_lseek(9999, 0, 0))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING LSEEK()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(436): (errno = 0, -1 == (ksys_lseek(-1, 0, 0))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING GETDENT()
+Bad file number
+ENTERING GETDENT()
+Bad file number
+ENTERING GETDENT()
+Bad file number
+ENTERING GETDENT()
+Bad file number
+ENTERING GETDENT()
+Bad file number
+ENTERING GETDENT()
+Bad file number
+ENTERING DUP()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(442): (errno = 0, -1 == (ksys_dup(20))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING DUP()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(443): (errno = 0, -1 == (ksys_dup(9999))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING DUP()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(444): (errno = 0, -1 == (ksys_dup(-1))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING DUP2()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(446): (errno = 0, -1 == (ksys_dup2(20, 10))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING DUP2()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(447): (errno = 0, -1 == (ksys_dup2(9999, 10))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING DUP2()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(448): (errno = 0, -1 == (ksys_dup2(-1, 10))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING DUP2()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(451): (errno = 0, -1 == (ksys_dup2(0, 9999))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING DUP2()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(452): (errno = 0, -1 == (ksys_dup2(0, -1))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING DUP2()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(456): (errno = 0, -1 == (ksys_dup2(20, 20))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING DUP2()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(457): (errno = 0, -1 == (ksys_dup2(9999, 9999))): 
+unexpected success, wanted EBADF (9)
+[0mENTERING DUP2()
+Bad file number
+[31;40mFAILED: test/vfstest/vfstest.c(458): (errno = 0, -1 == (ksys_dup2(-1, -1))): 
+unexpected success, wanted EBADF (9)
+[0m[37;40mmm/page.c:174 __page_split(): split 0xc1ed6000 (1) into 0xc1ed6000 and 0xc1ed7000
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 1 pages (addr 0xc1ed7000)
+[0m[31;40mmm/slab.c:253 _slab_allocator_grow(): Growing cache "file" (0xc1efb2d4), new slab 0xc1ed7fe0 (1 pages)
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ed7000 from "file" (0xc1efb2d4), slab 0xc1efb2d4, inuse 1
+[0m[35;40mfs/file.c:46 fref(): fref: 0xc1ed7004 up to 1
+[0mCALLING CREATE NOW: c1e93e18
+COMPARING
+pathname : file01
+f_path : /file01
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda2ec, 0xc1ee61b8 ino 6 up to 3, nrespages=0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda2ec, 0xc1ee61b8 ino 6, down to 2, nrespages = 0
+[0m[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1efa500 from "size-64" (0xc1efb004), slab 0xc1efb004, inuse 19
+[0m[31;40mmm/page.c:258 _page_alloc_order(): allocating 1 pages (addr 0xc1ed6000)
+[0mIteration! Current vnode no.: 6
+Iteration! Current vnode no.: 5
+Iteration! Current vnode no.: 4
+Iteration! Current vnode no.: 3
+Iteration! Current vnode no.: 2
+Iteration! Current vnode no.: 1
+Iteration! Current vnode no.: 0
+[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1eda364 from "vnode" (0xc1efb2fc), slab 0xc1efb2fc, inuse 8
+[0mINCREASING REF_COUNT
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda368, 0xc1ee61b8 ino 7 up to 2, nrespages=0
+[0mEXITING CREATE NOW
+ENTERING CLOSE()
+[35;40mfs/file.c:85 fput(): fput: 0xc1ed7004, 0xc1ee61b8 ino 7, down to 0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda368, 0xc1ee61b8 ino 7, down to 1, nrespages = 0
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1ed7000 from "file" (0xc1efb2d4), slab 0xc1ed7fe0, inuse 0
+[0mEXITING CLOSE()
+[31;40mmm/slab.c:295 slab_obj_alloc(): Allocated object 0xc1ed7000 from "file" (0xc1efb2d4), slab 0xc1efb2d4, inuse 1
+[0m[35;40mfs/file.c:46 fref(): fref: 0xc1ed7004 up to 1
+[0mpathname : file01
+f_path : /file01
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda2ec, 0xc1ee61b8 ino 6 up to 3, nrespages=0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda2ec, 0xc1ee61b8 ino 6, down to 2, nrespages = 0
+[0mIteration! Current vnode no.: 7
+Hit!! vnode no.: 7
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda368, 0xc1ee61b8 ino 7 up to 2, nrespages=0
+[0mENTERING DUP()
+[35;40mfs/file.c:44 fref(): fref: 0xc1ed7004, 0xc1ee61b8 ino 7, up to 2
+[0mEXITING DUP()
+ENTERING WRITE()
+[35;40mfs/file.c:44 fref(): fref: 0xc1ed7004, 0xc1ee61b8 ino 7, up to 3
+[0m[35;40mfs/file.c:85 fput(): fput: 0xc1ed7004, 0xc1ee61b8 ino 7, down to 2
+[0mEXITING WRITE()
+ENTERING LSEEK()
+[35;40mfs/file.c:44 fref(): fref: 0xc1ed7004, 0xc1ee61b8 ino 7, up to 3
+[0m[35;40mfs/file.c:85 fput(): fput: 0xc1ed7004, 0xc1ee61b8 ino 7, down to 2
+[0mEXITING LSEEK()
+ENTERING LSEEK()
+[35;40mfs/file.c:44 fref(): fref: 0xc1ed7004, 0xc1ee61b8 ino 7, up to 3
+[0m[35;40mfs/file.c:85 fput(): fput: 0xc1ed7004, 0xc1ee61b8 ino 7, down to 2
+[0mEXITING LSEEK()
+ENTERING LSEEK()
+[35;40mfs/file.c:44 fref(): fref: 0xc1ed7004, 0xc1ee61b8 ino 7, up to 3
+[0m[35;40mfs/file.c:85 fput(): fput: 0xc1ed7004, 0xc1ee61b8 ino 7, down to 2
+[0mEXITING LSEEK()
+ENTERING LSEEK()
+[35;40mfs/file.c:44 fref(): fref: 0xc1ed7004, 0xc1ee61b8 ino 7, up to 3
+[0m[35;40mfs/file.c:85 fput(): fput: 0xc1ed7004, 0xc1ee61b8 ino 7, down to 2
+[0mEXITING LSEEK()
+ENTERING LSEEK()
+[35;40mfs/file.c:44 fref(): fref: 0xc1ed7004, 0xc1ee61b8 ino 7, up to 3
+[0m[35;40mfs/file.c:85 fput(): fput: 0xc1ed7004, 0xc1ee61b8 ino 7, down to 2
+[0mEXITING LSEEK()
+ENTERING READ()
+[35;40mfs/file.c:44 fref(): fref: 0xc1ed7004, 0xc1ee61b8 ino 7, up to 3
+[0m[35;40mfs/file.c:85 fput(): fput: 0xc1ed7004, 0xc1ee61b8 ino 7, down to 2
+[0mEXITING READ()
+ENTERING LSEEK()
+[35;40mfs/file.c:44 fref(): fref: 0xc1ed7004, 0xc1ee61b8 ino 7, up to 3
+[0m[35;40mfs/file.c:85 fput(): fput: 0xc1ed7004, 0xc1ee61b8 ino 7, down to 2
+[0mEXITING LSEEK()
+ENTERING LSEEK()
+[35;40mfs/file.c:44 fref(): fref: 0xc1ed7004, 0xc1ee61b8 ino 7, up to 3
+[0m[35;40mfs/file.c:85 fput(): fput: 0xc1ed7004, 0xc1ee61b8 ino 7, down to 2
+[0mEXITING LSEEK()
+ENTERING CLOSE()
+[35;40mfs/file.c:85 fput(): fput: 0xc1ed7004, 0xc1ee61b8 ino 7, down to 1
+[0mEXITING CLOSE()
+ENTERING CHDIR()
+Iteration! Current vnode no.: 7
+Iteration! Current vnode no.: 6
+Iteration! Current vnode no.: 5
+Hit!! vnode no.: 5
+[36;40mfs/vnode.c:111 vref(): vref: 0xc1eda270, 0xc1ee61b8 ino 5 up to 2, nrespages=0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda2ec, 0xc1ee61b8 ino 6, down to 1, nrespages = 0
+[0mEXITED FROM VFSTEST
+[36;40mproc/proc.c:186 proc_cleanup(): CLEANING UP PROCESS
+[0mVPUT THE VNODE
+[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda368, 0xc1ee61b8 ino 7, down to 1, nrespages = 0
+[0mENTERING CLOSE()
+[35;40mfs/file.c:85 fput(): fput: 0xc1ed7004, 0xc1ee61b8 ino 7, down to 0
+[0m[36;40mfs/vnode.c:242 vput(): vput: 0xc1eda368, 0xc1ee61b8 ino 7, down to 0, nrespages = 0
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1eda364 from "vnode" (0xc1efb2fc), slab 0xc1eddff0, inuse 7
+[0m[31;40mmm/slab.c:337 slab_obj_free(): Freed object 0xc1ed7000 from "file" (0xc1efb2d4), slab 0xc1ed7fe0, inuse 0
+[0mEXITING CLOSE()
+panic in mm/pagetable.c:235 _pt_fault_handler(): 
+Page faulted while accessing 0xdeadbef7
+
+Kernel Halting.
+
